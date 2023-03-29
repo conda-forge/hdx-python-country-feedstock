@@ -1,11 +1,11 @@
-About hdx-python-country
-========================
+About hdx-python-country-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hdx-python-country-feedstock/blob/main/LICENSE.txt)
 
 Home: https://hdx-python-country.readthedocs.io
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hdx-python-country-feedstock/blob/main/LICENSE.txt)
 
 Summary: Utilities to map between country and region codes and names and to match
 administrative level names from different sources
