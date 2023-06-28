@@ -18,10 +18,12 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - hatchling
+    - hatch-vcs
   run:
     - python >=3.8
-    - hdx-python-utilities >=3.5.7
-    - libhxl >=4.27.3
+    - hdx-python-utilities >=3.5.9
+    - libhxl
     - pyphonetics
 
 test:
