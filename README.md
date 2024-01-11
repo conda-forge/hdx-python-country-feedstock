@@ -7,7 +7,7 @@ Home: https://hdx-python-country.readthedocs.io
 
 Package license: MIT
 
-Summary: Utilities to map between country and region codes and names and to match
+Summary: Utilities to map between country and region codes and names and match
 administrative level names from different sources
 
 
