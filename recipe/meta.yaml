@@ -22,7 +22,7 @@ requirements:
     - hatch-vcs
   run:
     - python >=3.8
-    - hdx-python-utilities >=3.6.6
+    - hdx-python-utilities >=3.6.7
     - libhxl >=5.2.1
     - pyphonetics
 
