@@ -1,5 +1,5 @@
 {% set name = "hdx-python-country" %}
-{% set version = "3.7.0" %}
+{% set version = "3.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6fcd4b78cbe64bb6540e6af18154dc199bbd4d5699762982a231d93240a43cd2
+  sha256: 48644c0cc2cb7715e071293e031c0a9670a6db53fd408dbc6f07a1dee847be60
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - hatch-vcs
   run:
     - python >=3.8
-    - hdx-python-utilities >=3.6.7
+    - hdx-python-utilities >=3.6.8
     - libhxl >=5.2.1
     - pyphonetics
 
