@@ -1,5 +1,5 @@
 {% set name = "hdx-python-country" %}
-{% set version = "3.7.2" %}
+{% set version = "3.7.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: a2d320c259e5d898d31d89953dbdcc5aa4ad89597b8ea721f74c38faca71e138
+  sha256: 698ab07b322fe9417897d894539886a1932802998ec7e4e96d45da8c4b15b60d
 
 build:
   noarch: python
