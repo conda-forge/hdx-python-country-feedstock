@@ -1,5 +1,5 @@
 {% set name = "hdx-python-country" %}
-{% set version = "3.8.2" %}
+{% set version = "3.8.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 0ff31336b1b9c0a9972367dd78e0cd331a5e1b640a61838326445ed2d5f8e90d
+  sha256: addac494bf34f99f68233c6f26ba5be92493f110dc1f95b93b75b117def8d02f
 
 build:
   noarch: python
@@ -23,8 +23,9 @@ requirements:
   run:
     - python >=3.8
     - hdx-python-utilities >=3.7.4
-    - libhxl >=5.2.1
+    - libhxl >=5.2.2
     - pyphonetics
+    - tenacity
 
 test:
   imports:
