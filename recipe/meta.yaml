@@ -23,8 +23,9 @@ requirements:
   run:
     - python >=3.8
     - hdx-python-utilities >=3.7.4
-    - libhxl >=5.2.1
+    - libhxl >=5.2.2
     - pyphonetics
+    - tenacity
 
 test:
   imports:
