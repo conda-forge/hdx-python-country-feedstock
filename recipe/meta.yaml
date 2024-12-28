@@ -12,16 +12,16 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python 3.8
+    - python {{ python_min }}
     - pip
     - hatchling
     - hatch-vcs
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - hdx-python-utilities >=3.7.4
     - libhxl >=5.2.2
     - pyphonetics
@@ -35,6 +35,7 @@ test:
     - hdx.location.phonetics
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
