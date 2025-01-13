@@ -22,9 +22,8 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - hdx-python-utilities >=3.7.4
+    - hdx-python-utilities >=3.8.0
     - libhxl >=5.2.2
-    - pyphonetics
     - tenacity
 
 test:
