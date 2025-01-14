@@ -1,5 +1,5 @@
 {% set name = "hdx-python-country" %}
-{% set version = "3.8.5" %}
+{% set version = "3.8.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: b4256ab1fe8c5ecaa3fb5e999edf5c5420edfa5948e0bf98c6ac7c24c48e9421
+  sha256: 5d22802b44a14152d465bbefe423fbd6d171b3955f8e45dd5bafed7d4a3bc923
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -22,9 +22,8 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - hdx-python-utilities >=3.7.4
+    - hdx-python-utilities >=3.8.1
     - libhxl >=5.2.2
-    - pyphonetics
     - tenacity
 
 test:
@@ -32,7 +31,6 @@ test:
     - hdx.location.adminlevel
     - hdx.location.country
     - hdx.location.currency
-    - hdx.location.phonetics
   requires:
     - pip
     - python {{ python_min }}
