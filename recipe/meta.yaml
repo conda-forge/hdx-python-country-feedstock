@@ -31,7 +31,6 @@ test:
     - hdx.location.adminlevel
     - hdx.location.country
     - hdx.location.currency
-    - hdx.location.phonetics
   requires:
     - pip
     - python {{ python_min }}
