@@ -1,5 +1,5 @@
 {% set name = "hdx-python-country" %}
-{% set version = "4.0.0" %}
+{% set version = "4.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 0f47ec467d662a1903925ee7211adf2a1ba55d78a312f11227e4dd0857d95960
+  sha256: 51434f2dbe6d2b9fdff8af6f8d13dd7158152086afeb012b76beb82e48d4c68b
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - hdx-python-utilities >=4.0.0
+    - hdx-python-utilities >=4.0.2
     - libhxl >=5.2.2
     - tenacity
 
