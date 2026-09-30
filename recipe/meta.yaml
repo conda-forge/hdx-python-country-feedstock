@@ -1,13 +1,13 @@
 {% set name = "hdx-python-country" %}
-{% set version = "4.1.4" %}
+{% set version = "4.2.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 54e911aaed7ff406cdca5119ca00015c7aa8f332cb7cde9015e8f7199d9387f0
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 53d119ad47d0119fae6dd0f4bd17dd3843cf2fc33c259017ca403baa872eaff7
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - hdx-python-utilities >=4.1.2,<5
+    - hdx-python-utilities >=4.2.0,<5
     - tenacity
 
 test:
