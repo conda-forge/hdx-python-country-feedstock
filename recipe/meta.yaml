@@ -1,5 +1,5 @@
 {% set name = "hdx-python-country" %}
-{% set version = "4.2.6" %}
+{% set version = "4.2.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 537c727c4340ea3a7686e9abd33d472b4c6e950454c509064de09f3a9800cee3
+  sha256: 3cb76205b7916008f09e7745e4372ca51f49432b8e64a6a2a02000cfa40f4f76
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - hdx-python-utilities >=4.2.5,<5
+    - hdx-python-utilities >=4.2.6,<5
     - tenacity
 
 test:
