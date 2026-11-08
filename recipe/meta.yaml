@@ -1,5 +1,5 @@
 {% set name = "hdx-python-country" %}
-{% set version = "4.3.0" %}
+{% set version = "4.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: a6aa34448d9e489023b9f94c060a19862b3e76ac44bf458d461af898432173ff
+  sha256: 28c5b057e7d2c2d248cea9b80aceb4d073f74815ff24b096ab3a14d1992cebe7
 
 build:
   noarch: python
